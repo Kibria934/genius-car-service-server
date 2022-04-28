@@ -109,7 +109,9 @@ async function run() {
   }
 }
 run().catch(console.dir());
-
+app.get('/hero',(req,res)=>{
+  res.send('This is new from heroku ')
+})
 app.get("/", (req, res) => {
   res.send("hello this is now added");
 });
